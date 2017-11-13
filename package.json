@@ -23,6 +23,8 @@
     "@angular/router": "^5.0.1",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "primeng": "^5.0.0-rc.0",
     "rxjs": "^5.4.2",
     "ts-loader": "^3.1.1",
     "zone.js": "^0.8.14"

@@ -8,6 +8,7 @@ const fs = require("fs");
 const document = fs.readFileSync(__dirname + '/dist-server/index.html', 'utf8');
 const AppServerModuleNgFactory = require(__dirname + '/dist-server/main.bundle').AppServerModuleNgFactory;
 const app = express();
+
 app.get('**', (req, res) => {
     const url = req.path;
     platform_server_1.renderModuleFactory(AppServerModuleNgFactory, { document, url })
@@ -16,4 +17,8 @@ app.get('**', (req, res) => {
         res.send(html);
     });
 });
+
+// Server static files from /dist
+app.get('*.*', express.static('../dist'));
+
 exports.ssrapp = functions.https.onRequest(app);

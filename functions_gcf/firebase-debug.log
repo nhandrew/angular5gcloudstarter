@@ -1,0 +1,146 @@
+[debug] [2017-11-10T00:10:11.784Z] ----------------------------------------------------------------------
+[debug] [2017-11-10T00:10:11.795Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fourj\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-11-10T00:10:11.796Z] CLI Version:   3.14.0
+[debug] [2017-11-10T00:10:11.796Z] Platform:      win32
+[debug] [2017-11-10T00:10:11.796Z] Node Version:  v8.9.1
+[debug] [2017-11-10T00:10:11.798Z] Time:          Thu Nov 09 2017 19:10:11 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:11.798Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-10T00:10:11.933Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-10T00:10:11.935Z] > authorizing via signed-in user
+[debug] [2017-11-10T00:10:11.947Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-10T00:10:11.948Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/OXw6uaDNZvgBHkzBw0IDZy_VmVxYWp0sDSiEUmq7Rqa-9pQMMJubnBP-uiM610D1',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Nov 09 2017 19:10:11 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:12.425Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:10:12.598Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/islandline-1479311803890  
+ Thu Nov 09 2017 19:10:12 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:13.119Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:10:13.121Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/islandline-1479311803890/tokens  
+ Thu Nov 09 2017 19:10:13 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:13.652Z] <<< HTTP RESPONSE 200
+[info] 2
+[info] 
+[info] === Deploying to 'islandline-1479311803890'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-11-10T00:10:14.453Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.0.1",
+    "@angular/common": "^5.0.1",
+    "@angular/compiler": "^5.0.1",
+    "@angular/core": "^5.0.1",
+    "@angular/forms": "^5.0.1",
+    "@angular/http": "^5.0.1",
+    "@angular/platform-browser": "^5.0.1",
+    "@angular/platform-browser-dynamic": "^5.0.1",
+    "@angular/platform-server": "^5.0.1",
+    "@angular/router": "^5.0.1",
+    "core-js": "^2.4.1",
+    "express": "^4.16.2",
+    "firebase-admin": "~5.4.3",
+    "firebase-functions": "^0.7.2",
+    "font-awesome": "^4.7.0",
+    "rxjs": "^5.4.2",
+    "tslib": "^1.8.0",
+    "zone.js": "^0.8.14"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-11-10T00:10:14.474Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/islandline-1479311803890?view=CONSUMER_VIEW  
+ Thu Nov 09 2017 19:10:14 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:14.477Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/islandline-1479311803890?view=CONSUMER_VIEW  
+ Thu Nov 09 2017 19:10:14 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:15.277Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-11-10T00:10:15.325Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2017-11-10T00:10:15.335Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/islandline-1479311803890  
+ Thu Nov 09 2017 19:10:15 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:15.339Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/islandline-1479311803890/apiKeys  
+ Thu Nov 09 2017 19:10:15 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:10:15.825Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:10:15.862Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:21:45.879Z] ----------------------------------------------------------------------
+[debug] [2017-11-10T00:21:45.887Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\fourj\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-11-10T00:21:45.888Z] CLI Version:   3.14.0
+[debug] [2017-11-10T00:21:45.888Z] Platform:      win32
+[debug] [2017-11-10T00:21:45.888Z] Node Version:  v8.9.1
+[debug] [2017-11-10T00:21:45.890Z] Time:          Thu Nov 09 2017 19:21:45 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:45.890Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-10T00:21:45.994Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-10T00:21:45.996Z] > authorizing via signed-in user
+[debug] [2017-11-10T00:21:46.002Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/islandline-1479311803890  
+ Thu Nov 09 2017 19:21:46 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:46.725Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:21:46.727Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/islandline-1479311803890/tokens  
+ Thu Nov 09 2017 19:21:46 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:47.148Z] <<< HTTP RESPONSE 200
+[info] 2
+[info] 
+[info] === Deploying to 'islandline-1479311803890'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2017-11-10T00:21:47.959Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.0.1",
+    "@angular/common": "^5.0.1",
+    "@angular/compiler": "^5.0.1",
+    "@angular/core": "^5.0.1",
+    "@angular/forms": "^5.0.1",
+    "@angular/http": "^5.0.1",
+    "@angular/platform-browser": "^5.0.1",
+    "@angular/platform-browser-dynamic": "^5.0.1",
+    "@angular/platform-server": "^5.0.1",
+    "@angular/router": "^5.0.1",
+    "core-js": "^2.4.1",
+    "express": "^4.16.2",
+    "firebase-admin": "~5.4.3",
+    "firebase-functions": "^0.7.2",
+    "font-awesome": "^4.7.0",
+    "rxjs": "^5.4.2",
+    "tslib": "^1.8.0",
+    "zone.js": "^0.8.14"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2017-11-10T00:21:47.975Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/islandline-1479311803890?view=CONSUMER_VIEW  
+ Thu Nov 09 2017 19:21:47 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:47.975Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/islandline-1479311803890?view=CONSUMER_VIEW  
+ Thu Nov 09 2017 19:21:47 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:48.692Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2017-11-10T00:21:48.777Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2017-11-10T00:21:48.777Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/islandline-1479311803890  
+ Thu Nov 09 2017 19:21:48 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:48.777Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/islandline-1479311803890/apiKeys  
+ Thu Nov 09 2017 19:21:48 GMT-0500 (Eastern Standard Time)
+[debug] [2017-11-10T00:21:49.255Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-10T00:21:49.330Z] <<< HTTP RESPONSE 200
